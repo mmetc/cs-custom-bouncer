@@ -40,4 +40,4 @@ jobs:
       run: |
         tag_name="${GITHUB_REF##*/}"
         # this will upload the $PROGRAM_NAME-vendor.tar.xz file as well
-        gh release upload "$tag_name" "$PROGRAM_NAME*" vendor.tgz
+        gh release upload "$tag_name" $PROGRAM_NAME* vendor.tgz
