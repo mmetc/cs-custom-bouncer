@@ -40,4 +40,4 @@ jobs:
       run: |
         tag_name="${GITHUB_REF##*/}"
         # this will find the $PROGRAM_NAME-vendor.tar.xz file as well
-        hub release edit $(find . -name "$PROGRAM_NAME*" -maxdepth 1 -printf "-a %p ") -a vendor.tgz -m "" "$tag_name"
+        gh release edit $(find . -name "$PROGRAM_NAME*" -maxdepth 1 -printf "-a %p ") -a vendor.tgz -m "" "$tag_name"
